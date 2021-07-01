@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const db = require('../../db/connection');
+const inputCheck = require('../../__utils__/inputCheck');
 
 // Get all parties
 router.get('/parties', (req, res) => {
